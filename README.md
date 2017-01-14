@@ -36,14 +36,6 @@ This package contains:
 - Testing framework with Mocha and Chai
 - [Meteor-RxJS](http://angular-meteor.com/meteor-rxjs/) support and usage
 
-This application also contains demo code:
-
-- Main Component (`/client/app.component`)
-- Demo Child Component (`/client/imports/demo/demo.component`)
-- Demo Service (`/client/imports/demo/demo-data.service`)
-- Demo Mongo Collection (`/both/demo.collection.ts`) with a TypeScript interface as model.
-
-The Main component loads the child component, which uses the demo service that gets it's data from the demo collection.
 
 ### Folder Structure
 
@@ -78,4 +70,12 @@ There is a main test file that initialize Angular 2 tests library, it located un
 
 All other test files are located near the component/service it tests, with the `.test.ts` extension.
 
-The `DemoComponent` contains example for Angular 2 tests for Component, and in the server side there is an example for testing Meteor collections and stub data.
+Using Mongodb for data. Edited some files and deleted files.
+
+Start meteor mongo in the directory
+
+db.parties.insert({ name: "A 3rd party", description: "Shaari Gang", location: "Kampung Besut" });
+
+and insert a few more ....
+
+THe page will automatically loaded with the data list.
